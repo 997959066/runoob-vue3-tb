@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>各节点TOP10产品</h1>
+    <h1>DEMO</h1>
     <div >
       <LineChart3 />
     </div>

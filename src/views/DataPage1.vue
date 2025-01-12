@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Data 1 页面</h1>
+    <h1>上周个业务节点TOP1产品</h1>
 
     <div>
       <LineChart  />

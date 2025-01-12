@@ -1,6 +1,7 @@
 <template>
   <!-- 为容器 div 设置 id，并通过 ref 获取 -->
-  <div id="container" ref="chartContainer"></div>
+  <div id="container" ref="chartContainer" style="width: 100%; height: 500px;"></div>
+
 </template>
 
 <script>
@@ -96,7 +97,5 @@ export default {
 <style scoped>
 /* 固定图表容器的宽高 */
 #container {
-  width: 1160px; /* 与 config 中的宽度保持一致 */
-  height: 376px; /* 与 config 中的高度保持一致 */
 }
 </style>

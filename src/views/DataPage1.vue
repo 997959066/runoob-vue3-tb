@@ -2,7 +2,7 @@
   <div>
     <h1>Data 1 页面</h1>
 
-    <div style="position:relative;"">
+    <div>
       <LineChart  />
     </div>
 

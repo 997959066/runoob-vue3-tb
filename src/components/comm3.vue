@@ -31,15 +31,15 @@ export default {
         { type: 'ODV-收货', productCode: 'R8374', levelCount: 71 },
         { type: 'Other', productCode: 'P17637', levelCount: 71 },
         { type: '出库', productCode: 'R8374', levelCount: 70 },
-        { type: '加工中', productCode: 'R1753', levelCount: 69 },
+        // { type: '加工中', productCode: 'R1753', levelCount: 69 },
         { type: '干仓收货', productCode: 'P19699', levelCount: 40 },
-        { type: '开封', productCode: 'P15295', levelCount: 59 },
+        // { type: '开封', productCode: 'P15295', levelCount: 59 },
         { type: '待加工-冷藏解冻', productCode: 'P19016', levelCount: 56 },
-        { type: '成品', productCode: 'R1753', levelCount: 55 },
+        // { type: '成品', productCode: 'R1753', levelCount: 55 },
         { type: '报损', productCode: 'R29566', levelCount: 53 },
         { type: '汁水', productCode: 'R16789', levelCount: 51 },
         { type: '生鲜收货', productCode: 'P11129', levelCount: 50 },
-        { type: '留样', productCode: 'R23486', levelCount: 49 },
+        // { type: '留样', productCode: 'R23486', levelCount: 49 },
         { type: '移库', productCode: 'P12943', levelCount: 42 },
         { type: '调整', productCode: 'R10160', levelCount: 39 },
         { type: '转运单-发货', productCode: 'P12943', levelCount: 32 },
@@ -73,9 +73,5 @@ export default {
 </script>
 
 <style scoped>
-/* 确保容器有固定宽高，避免无限扩展 */
-#container {
-  width: 560px; /* 宽度需与配置中的 width 保持一致 */
-  height: 376px; /* 高度需与配置中的 height 保持一致 */
-}
+
 </style>

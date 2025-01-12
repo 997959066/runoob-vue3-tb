@@ -1,17 +1,20 @@
 <template>
   <div>
     <h1>Data 2 页面</h1>
-    <p>这里是第二个数据页面。</p>
-    <button @click="doSomething">执行特定功能</button>
+    <div>
+    <LineChart2/>
+  </div>
     <button @click="goHome">返回首页</button>
   </div>
 </template>
 
 <script>
 import { useRouter } from 'vue-router';
-
+import LineChart2 from "@/components/comm2.vue";
+import LineChart from "@/components/comm.vue";
 export default {
   name: 'DataPage2',
+  components: {LineChart, LineChart2},
   setup() {
     const router = useRouter();
 

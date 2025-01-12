@@ -11,10 +11,9 @@
 <script>
 import { useRouter } from 'vue-router';
 import LineChart2 from "@/components/comm2.vue";
-import LineChart from "@/components/comm.vue";
 export default {
   name: 'DataPage2',
-  components: {LineChart, LineChart2},
+  components: {LineChart2},
   setup() {
     const router = useRouter();
 

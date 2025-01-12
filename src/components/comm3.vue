@@ -48,8 +48,8 @@ export default {
       ];
             const column = new Column(container, {
               data,
-              width: 1000,
-              height:500,
+              // width: 990,
+              // height:500,
               xField: 'type',
               yField: 'levelCount',
               seriesField: 'productCode',

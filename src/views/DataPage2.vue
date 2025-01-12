@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>各节点TOP10产品</h1>
+    <h1>TOP10 products of each node</h1>
     <div >
       <LineChart2 />
     </div>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>Data 3 页面</h1>
-    <div>
-      <LineChart3/>
+    <div >
+      <LineChart3 />
     </div>
     <button @click="goHome">返回首页</button>
   </div>

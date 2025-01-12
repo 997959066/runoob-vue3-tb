@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 添加 ref 标记 -->
-    <div id="container" ref="chartContainer"></div>
+    <div id="container" ref="chartContainer" style="width: 100%; height: 500px;"></div>
   </div>
 </template>
 
@@ -18,177 +18,38 @@ export default {
       // 获取正确的容器
       const container = chartContainer.value;
 
-            const data =[
-              {
-                "city": "石家庄",
-                "type": "水果",
-                "value": 14500
-              },
-              {
-                "city": "石家庄",
-                "type": "米面",
-                "value": 8500
-              },
-              {
-                "city": "石家庄",
-                "type": "特产零食",
-                "value": 10000
-              },
-              {
-                "city": "石家庄",
-                "type": "茶叶",
-                "value": 7000
-              },
-              {
-                "city": "深圳",
-                "type": "水果",
-                "value": 9000
-              },
-              {
-                "city": "深圳",
-                "type": "米面",
-                "value": 8500
-              },
-              {
-                "city": "深圳",
-                "type": "特产零食",
-                "value": 11000
-              },
-              {
-                "city": "深圳",
-                "type": "茶叶",
-                "value": 6000
-              },
-              {
-                "city": "温州",
-                "type": "水果",
-                "value": 16000
-              },
-              {
-                "city": "温州",
-                "type": "米面",
-                "value": 5000
-              },
-              {
-                "city": "温州",
-                "type": "特产零食",
-                "value": 6000
-              },
-              {
-                "city": "温州",
-                "type": "茶叶",
-                "value": 10000
-              },
-              {
-                "city": "宁波",
-                "type": "水果",
-                "value": 14000
-              },
-              {
-                "city": "宁波",
-                "type": "米面",
-                "value": 9000
-              },
-              {
-                "city": "宁波",
-                "type": "特产零食",
-                "value": 10000
-              },
-              {
-                "city": "宁波",
-                "type": "茶叶",
-                "value": 9000
-              },
-              {
-                "city": "无锡",
-                "type": "水果",
-                "value": 14000
-              },
-              {
-                "city": "无锡",
-                "type": "米面",
-                "value": 9000
-              },
-              {
-                "city": "无锡",
-                "type": "特产零食",
-                "value": 10000
-              },
-              {
-                "city": "无锡",
-                "type": "茶叶",
-                "value": 6000
-              },
-              {
-                "city": "杭州",
-                "type": "水果",
-                "value": 9000
-              },
-              {
-                "city": "杭州",
-                "type": "米面",
-                "value": 8500
-              },
-              {
-                "city": "杭州",
-                "type": "特产零食",
-                "value": 10000
-              },
-              {
-                "city": "杭州",
-                "type": "茶叶",
-                "value": 6000
-              },
-              {
-                "city": "北京",
-                "type": "水果",
-                "value": 17000
-              },
-              {
-                "city": "北京",
-                "type": "米面",
-                "value": 6000
-              },
-              {
-                "city": "北京",
-                "type": "特产零食",
-                "value": 7000
-              },
-              {
-                "city": "北京",
-                "type": "茶叶",
-                "value": 10000
-              },
-              {
-                "city": "上海",
-                "type": "水果",
-                "value": 18000
-              },
-              {
-                "city": "上海",
-                "type": "米面",
-                "value": 11000
-              },
-              {
-                "city": "上海",
-                "type": "特产零食",
-                "value": 15000
-              },
-              {
-                "city": "上海",
-                "type": "茶叶",
-                "value": 14000
-              }
-            ];
+      const data = [
+        { type: '已加工-即食', productCode: 'R23480', levelCount: 1 },
+        { type: 'ODV-发货', productCode: 'R8374', levelCount: 77 },
+        { type: 'ODV-收货', productCode: 'R8374', levelCount: 71 },
+        { type: 'Other', productCode: 'P17637', levelCount: 2 },
+        { type: '出库', productCode: 'R8374', levelCount: 70 },
+        { type: '加工中', productCode: 'R1753', levelCount: 76 },
+        { type: '干仓收货', productCode: 'P19699', levelCount: 29 },
+        { type: '开封', productCode: 'P15295', levelCount: 24 },
+        { type: '待加工-冷藏解冻', productCode: 'P19016', levelCount: 16 },
+        { type: '成品', productCode: 'R1753', levelCount: 107 },
+        { type: '报损', productCode: 'R29566', levelCount: 53 },
+        { type: '汁水', productCode: 'R16789', levelCount: 1 },
+        { type: '生鲜收货', productCode: 'P11129', levelCount: 1 },
+        { type: '留样', productCode: 'R23486', levelCount: 9 },
+        { type: '移库', productCode: 'P12943', levelCount: 2 },
+        { type: '调整', productCode: 'R10160', levelCount: 99 },
+        { type: '转运单-发货', productCode: 'P12943', levelCount: 2 },
+        { type: '餐厅订单-发货', productCode: 'R29', levelCount: 57 },
+        { type: '餐厅订单-收货', productCode: 'R1753', levelCount: 28 },
+      ];
             const column = new Column(container, {
               data,
-              xField: 'city',
-              yField: 'value',
-              seriesField: 'type',
+              width: 1000,
+              height:500,
+              xField: 'type',
+              yField: 'levelCount',
+              seriesField: 'productCode',
               isGroup: 'true',
               columnStyle: {
                 radius: [20, 20, 0, 0],
-              },
+              }
             });
 
             column.render();

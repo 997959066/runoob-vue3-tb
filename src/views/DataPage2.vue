@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Data 2 页面</h1>
-    <div>
-    <LineChart2/>
-  </div>
+    <h1>各节点TOP10产品</h1>
+    <div >
+      <LineChart2 />
+    </div>
     <button @click="goHome">返回首页</button>
   </div>
 </template>
@@ -11,6 +11,7 @@
 <script>
 import { useRouter } from 'vue-router';
 import LineChart2 from "@/components/comm2.vue";
+
 export default {
   name: 'DataPage2',
   components: {LineChart2},
@@ -21,18 +22,13 @@ export default {
       router.push('/'); // 返回首页
     };
 
-    const doSomething = () => {
-      alert('执行特定功能！');
-    };
-
-    return { goHome, doSomething };
+    return {goHome};
   },
 };
 </script>
 
 <style scoped>
 button {
-  margin-right: 10px;
   padding: 10px 20px;
   background: #007bff;
   color: white;
@@ -40,6 +36,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
 button:hover {
   background: #0056b3;
 }

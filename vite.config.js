@@ -14,5 +14,10 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
+  },
+  //ip访问
+  server: {
+    port: 3000,
+    host: '0.0.0.0'
   }
 })

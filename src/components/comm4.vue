@@ -18,20 +18,20 @@ export default {
       // 获取正确的容器
       const container = chartContainer.value;
 
-            const column = new Column(container, {
-              data,
-              // width: 990,
-              // height:500,
-              xField: 'date',
-              yField: 'check_num_count',
-              seriesField: 'location_id',
-              // isGroup: 'true',
-              columnStyle: {
-                radius: [20, 20, 0, 0],
-              }
-            });
+      const column = new Column(container, {
+        data,
+        // width: 990,
+        // height:500,
+        xField: 'create_time',
+        yField: 'check_num_count',
+        seriesField: 'location_id',
+        // isGroup: 'true',
+        columnStyle: {
+          radius: [20, 20, 0, 0],
+        }
+      });
 
-            column.render();
+      column.render();
 
 
       //onMounted-----end------

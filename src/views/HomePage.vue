@@ -4,6 +4,7 @@
     <button @click="goToPage(1)">上周个业务节点TOP1产品</button>
     <button @click="goToPage(2)">CR1上线至今各个节点TOP10产品</button>
     <button @click="goToPage(3)">DEMO</button>
+    <button @click="goToPage(4)">CT</button>
   </div>
 </template>
 

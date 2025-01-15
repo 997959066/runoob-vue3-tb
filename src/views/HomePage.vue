@@ -1,10 +1,11 @@
 <template>
   <div>
     <h1>Business Report</h1>
-    <button @click="goToPage(1)">上周个业务节点TOP1产品</button>
-    <button @click="goToPage(2)">CR1上线至今各个节点TOP10产品</button>
+    <button @click="goToPage(1)">Last week's business node TOP1 product</button>
+    <button @click="goToPage(2)">TOP10 products of each node</button>
     <button @click="goToPage(3)">DEMO</button>
-    <button @click="goToPage(4)">CT</button>
+    <button @click="goToPage(4)">CT By Location</button>
+    <button @click="goToPage(5)">CT By Month Statistics check number</button>
   </div>
 </template>
 

@@ -1,23 +1,20 @@
 <template>
   <div>
-    <h1>Last week's business node TOP1 product</h1>
-
-    <div>
-      <LineChart  />
+    <h1>CT By Month Statistics check number</h1>
+    <div >
+      <LineChart5 />
     </div>
-
     <button @click="goHome">返回首页</button>
   </div>
 </template>
 
 <script>
-//brian引入组件
 import { useRouter } from 'vue-router';
-import LineChart from "@/components/comm.vue";
+import LineChart5 from "@/components/comm5.vue";
 
 export default {
-  name: 'DataPage1',
-  components: {LineChart},
+  name: 'DataPage5',
+  components: {LineChart5},
   setup() {
     const router = useRouter();
 

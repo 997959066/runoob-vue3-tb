@@ -4,6 +4,7 @@ import DataPage1 from '../views/DataPage1.vue';
 import DataPage2 from '../views/DataPage2.vue';
 import DataPage3 from '../views/DataPage3.vue';
 import DataPage4 from '../views/DataPage4.vue';
+import DataPage5 from '../views/DataPage5.vue';
 
 const routes = [
     {
@@ -29,6 +30,10 @@ const routes = [
         path: '/data4',
         name: 'DataPage4',
         component: DataPage4,
+    },{
+        path: '/data5',
+        name: 'DataPage5',
+        component: DataPage5,
     },
 ];
 

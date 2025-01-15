@@ -7,28 +7,38 @@
 
 <script>
 import { onMounted, ref } from 'vue';
+import { Column } from '@antv/g2plot';
 import data from '/public/data5.json'; // 确保路径正确
-import { Line } from '@antv/g2plot';export default {
+export default {
   setup(input) {
     const chartContainer = ref(null); // 定义 ref
 
     onMounted(input => {
-      // 获取正确的容器
+
       const container = chartContainer.value;
 
-
-      // fetch('https://gw.alipayobjects.com/os/bmw-prod/1d565782-dde4-4bb6-8946-ea6a38ccf184.json')
-      //     .then((res) => res.json())
-      //     .then((data) => {
-            console.log(data)
-            const line = new Line(container, {
+            const columnPlot = new Column(container, {
               data,
-              xField: 'create_time',
-              yField: 'check_num_count',
+              xField: 'MONTH',
+              yField: 'CHECK_NUM_COUNT',
+              columnStyle: {
+                radius: [20, 20, 0, 0],
+              },columnBackground: {
+                style: {
+                  fill: 'rgba(0,0,0,0.1)',
+                },
+              },label: {
+                position: 'top', // 数据标签显示在柱子顶部
+                style: {
+                  fill: '#595959', // 标签颜色
+                  fontSize: 12, // 字体大小
+                  fontWeight: 'bold', // 字体加粗
+                }
+              },appendPadding: [20, 20, 30, 20], // 设置图表的额外边距 [上, 右, 下, 左]
             });
 
-            line.render();
-          // });
+            columnPlot.render();
+
 
       //onMounted-----end------
     });

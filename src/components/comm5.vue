@@ -29,6 +29,8 @@ export default {
               data,
               xField: 'MONTH',
               yField: 'CHECK_NUM_COUNT',
+              seriesField: 'type',
+              isGroup: true,
               columnStyle: {
                 radius: [20, 20, 0, 0],
               },columnBackground: {

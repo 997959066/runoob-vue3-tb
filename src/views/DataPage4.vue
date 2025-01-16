@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>DEMO</h1>
+    <h1>Stargazer Grill - 星露台餐厅</h1>
     <div >
       <LineChart4 />
     </div>

@@ -18,20 +18,13 @@ export default {
       // 获取正确的容器
       const container = chartContainer.value;
 
-      data.sort((a, b) => {
-        // 比较 MONTH 字符串
-        if (a.MONTH < b.MONTH) return -1;
-        if (a.MONTH > b.MONTH) return 1;
-        return 0;
-      });
-      
       const column = new Column(container, {
         data,
         // width: 990,
         // height:500,
         xField: 'MONTH',
         yField: 'CHECK_NUM_COUNT',
-        seriesField: 'LOCATION_NAME',
+        seriesField: 'type',
         isGroup: 'true',
         columnStyle: {
           radius: [20, 20, 0, 0],

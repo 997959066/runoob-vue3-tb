@@ -17,7 +17,9 @@ export default {
     onMounted(input => {
       // 获取正确的容器
       const container = chartContainer.value;
-
+      data.sort((a, b) => {
+        return a.MONTH.localeCompare(b.MONTH); // 按字符串升序排列
+      });
       const column = new Column(container, {
         data,
         // width: 990,
@@ -25,7 +27,15 @@ export default {
         xField: 'MONTH',
         yField: 'CHECK_NUM_COUNT',
         seriesField: 'type',
-        isGroup: 'true',
+        isGroup: 'true'
+        ,label: {
+        position: 'top', // 数据标签显示在柱子顶部
+            style: {
+          fill: '#595959', // 标签颜色
+              fontSize: 12, // 字体大小
+              fontWeight: 'bold', // 字体加粗
+        }
+      },
         columnStyle: {
           radius: [20, 20, 0, 0],
         }

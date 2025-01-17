@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Last week's business node TOP1 product</h1>
+    <h1>FSTS statistics of all orders</h1>
 
     <div>
       <LineChart  />

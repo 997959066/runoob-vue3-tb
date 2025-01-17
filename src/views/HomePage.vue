@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Business Report</h1>
-    <button @click="goToPage(1)">Last week's business node TOP1 product</button>
+    <button @click="goToPage(1)">FSTS statistics of all orders</button>
     <button @click="goToPage(2)">TOP10 products of each node</button>
     <button @click="goToPage(3)">DEMO</button>
     <button @click="goToPage(4)">CT By Location</button>

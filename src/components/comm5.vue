@@ -17,13 +17,10 @@ export default {
 
       const container = chartContainer.value;
 
-// 排序操作：将 MONTH 格式的字符串转换为 Date 对象进行排序
       data.sort((a, b) => {
-        const monthA = new Date(`01-${a.MONTH}`); // 将 "Nov-24" 转换为 "01-Nov-2024"
-        const monthB = new Date(`01-${b.MONTH}`); // 同样转换 b
-
-        return monthA - monthB; // 按照日期进行升序排序
+        return a.MONTH.localeCompare(b.MONTH); // 按字符串升序排列
       });
+
 
             const columnPlot = new Column(container, {
               data,

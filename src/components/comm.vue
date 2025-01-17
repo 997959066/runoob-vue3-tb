@@ -33,6 +33,12 @@ export default {
         },
         label: {
           visible: true,
+          position: 'top', // 数据标签显示在柱子顶部
+          style: {
+            fill: '#595959', // 标签颜色
+            fontSize: 12, // 字体大小
+            fontWeight: 'bold', // 字体加粗
+          }
         },
         forceFit: false,
         width: 1160,

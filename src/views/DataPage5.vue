@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>CT By Month Statistics check number</h1>
+    <h1>CT & MO 月单 比例</h1>
     <div >
       <LineChart5 />
     </div>

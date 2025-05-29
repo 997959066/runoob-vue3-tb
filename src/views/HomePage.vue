@@ -6,6 +6,7 @@
     <button @click="goToPage(3)">DEMO</button>
     <button @click="goToPage(4)">CT By Location</button>
     <button @click="goToPage(5)">CT By Month Statistics check number</button>
+    <button @click="goToPage(6)">普通标签每月使用数量</button>
   </div>
 </template>
 
